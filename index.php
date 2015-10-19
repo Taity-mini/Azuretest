@@ -123,7 +123,7 @@ for ($i = 1; $i < 30; $i++)
 
     elseif($i % 3 == 0)
     {
-        echo "On the ". $i  .$date ."rd month mugs are available";
+        echo "On the ". $i  .$date ." month mugs are available";
         $found = true;
     }
 
