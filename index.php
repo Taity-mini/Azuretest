@@ -14,7 +14,8 @@
     $myname = "Frodo Baggins";
     $myage = 111;
 
-    echo "My name is" . $myname . "and I am" . $myage;
+    echo'<BR/>';
+    echo "My name is " . $myname . " and I am " . $myage;
 ?>
 </p>
 </body>
