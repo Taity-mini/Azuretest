@@ -1,7 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Deployment Test</title>
+</head>
+<body>
+<p>
 <?php
-/**
- * Created by PhpStorm.
- * User: Andrew
- * Date: 19/10/2015
- * Time: 14:22
- */
+    echo"Hello World";
+?>
+</p>
+</body>
+</html>
