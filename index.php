@@ -43,6 +43,15 @@ switch ($numberofHobbits) {
 
 }
 
+//Arrays
+echo'<BR/>';
+echo "Arrays";
+$myArray = array("do", "re", "mi"); //declares the array
+echo $myArray[0]; // outputs "do"
+$myArray[1] = "la";
+echo $myArray[1]; //outputs "la"
+unset($myArray[2]); //removes the array in postion 2
+
 
 ?>
 </p>
