@@ -85,8 +85,18 @@ for ($i = 1; $i < 30; $i++)
     $found = false;
     if ($i % 2 == 0)
     {
-        echo "On the ". $i. "  month specs are available";
-        $found = true;
+        if ($i % 4 == 0)
+        {
+            echo "On the ". $i. " th month specs and sausage rolls are available";
+            $found = true;
+        }
+        else
+        {
+            echo "On the ". $i. "  month specs are available";
+            $found = true;
+        }
+
+
     }
 
     elseif($i % 3 == 0)
@@ -95,15 +105,11 @@ for ($i = 1; $i < 30; $i++)
         $found = true;
     }
 
-   if ($i % 4 == 0)
-    {
-        echo "On the ". $i. " th month specs and sausage rolls are available";
-        $found = true;
-    }
+
 
     elseif($found == false )
     {
-        echo "On the ". $i. "st of the month no products are available";
+        echo "On the ". $i. " of the month no products are available";
     }
 
     echo'<BR/>';
