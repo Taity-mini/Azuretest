@@ -29,7 +29,7 @@ switch ($wantedgood) {
         echo "You have to be 21 to  buy rolls";
         break;
     default:
-        echo"All the hobbits have gone home";
+        echo"Invalid item";
 
 }
 
