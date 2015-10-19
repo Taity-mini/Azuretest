@@ -59,7 +59,17 @@ $provisionedActivities = array("Specs" ,"Drugs", "and ", "Rock and Roll");
 foreach($provisionedActivities as $x) {
     print "<p>$x</p>";
 }
-
+echo'<BR/>';
+$provisionedActivities[1] = "hugs";
+$provisionedActivities = array("Specs" ,"Drugs", "and ", "Rock and Roll");
+foreach($provisionedActivities as $x) {
+    print "<p>$x</p>";
+}
+echo'<BR/>';
+unset($provisionedActivities[3]);
+foreach($provisionedActivities as $x) {
+    print "<p>$x</p>";
+}
 
 ?>
 </p>
