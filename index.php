@@ -109,7 +109,7 @@ for ($i = 1; $i < 30; $i++)
     {
         if ($i % 4 == 0)
         {
-            echo "On the ". $i  .$date ."month specs and sausage rolls are available";
+            echo "On the ". $i  .$date ." month specs and sausage rolls are available";
             $found = true;
         }
         else
