@@ -46,6 +46,7 @@ switch ($numberofHobbits) {
 //Arrays
 echo'<BR/>';
 echo "Arrays";
+echo'<BR/>';
 $myArray = array("do", "re", "mi"); //declares the array
 echo $myArray[0]; // outputs "do"
 $myArray[1] = "la";
