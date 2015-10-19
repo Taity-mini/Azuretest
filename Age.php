@@ -18,11 +18,11 @@
 <?php
 $wantedgood = "mugs";
 
-switch ($numberofHobbits) {
+switch ($wantedgood) {
     case "Specs":
         echo" You have to 16 to buy specs";
         break;
-    case"mugs":
+    case "mugs":
         echo"You have to be 18 to buy mugs";
         break;
     case "rolls":
