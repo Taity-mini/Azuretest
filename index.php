@@ -79,20 +79,42 @@ for ($i = 1; $i < 10; $i++)
 }
 
 
+//variables
+$date = "";
+
 
 for ($i = 1; $i < 30; $i++)
 {
+
+    switch ($i) {
+        case 1:
+            $date = "st";
+            break;
+        case 2:
+            $date ="nd";
+            break;
+        case 3:
+            $date ="rd";
+            break;
+        default:
+            $date="th";
+
+    }
+
+
+
+
     $found = false;
     if ($i % 2 == 0)
     {
         if ($i % 4 == 0)
         {
-            echo "On the ". $i. " th month specs and sausage rolls are available";
+            echo "On the ". $i  .$date ."month specs and sausage rolls are available";
             $found = true;
         }
         else
         {
-            echo "On the ". $i. "  month specs are available";
+            echo "On the ". $i  .$date ." month specs are available";
             $found = true;
         }
 
@@ -101,7 +123,7 @@ for ($i = 1; $i < 30; $i++)
 
     elseif($i % 3 == 0)
     {
-        echo "On the ". $i. " rd month mugs are available";
+        echo "On the ". $i  .$date ."rd month mugs are available";
         $found = true;
     }
 
@@ -109,7 +131,7 @@ for ($i = 1; $i < 30; $i++)
 
     elseif($found == false )
     {
-        echo "On the ". $i. " of the month no products are available";
+        echo "On the ". $i  .$date ." of the month no products are available";
     }
 
     echo'<BR/>';
