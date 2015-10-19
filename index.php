@@ -85,12 +85,12 @@ for ($i = 1; $i < 30; $i++)
         echo "On the ". $i. " month specs are available";
     }
 
-    if($i % 3 == 0)
+    elseif($i % 3 == 0)
     {
         echo "On the ". $i. " month mugs are available";
     }
 
-   if ($i % 4 == 0)
+   elseif ($i % 4 == 0)
     {
         echo "On the ". $i. " month specs and sausage rolls are available";
     }
