@@ -78,24 +78,30 @@ for ($i = 1; $i < 10; $i++)
     echo "<p>Hello!</p>";
 }
 
+
+
 for ($i = 1; $i < 30; $i++)
 {
+    $found = false;
     if ($i % 2 == 0)
     {
         echo "On the ". $i. " month specs are available";
+        $found = true;
     }
 
     elseif($i % 3 == 0)
     {
         echo "On the ". $i. " month mugs are available";
+        $found = true;
     }
 
    elseif ($i % 4 == 0)
     {
         echo "On the ". $i. " month specs and sausage rolls are available";
+        $found = true;
     }
 
-    else
+    elseif($found == false )
     {
         echo "On the ". $i. " of the month no products are available";
     }
