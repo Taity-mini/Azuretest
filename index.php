@@ -53,6 +53,13 @@ $myArray[1] = "la";
 echo $myArray[1]; //outputs "la"
 unset($myArray[2]); //removes the array in postion 2
 
+echo'<BR/>';
+
+$provisionedActivities = array("Specs" ,"Drugs", "and ", "Rock and Roll");
+foreach($provisionedActivities as $x) {
+    print "<p>$x</p>";
+}
+
 
 ?>
 </p>
