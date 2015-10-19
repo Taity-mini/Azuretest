@@ -78,6 +78,34 @@ for ($i = 1; $i < 10; $i++)
     echo "<p>Hello!</p>";
 }
 
+for ($i = 1; $i < 30; $i++)
+{
+    if ($i % 2)
+    {
+        echo "On the ". $i. " month specs are available";
+    }
+
+    elseif($i % 3)
+    {
+        echo "On the ". $i. " month mugs are available";
+    }
+
+    elseif ($i % 4)
+    {
+        echo "On the ". $i. " month specs and sausage rolls are available";
+    }
+
+    else
+    {
+        echo "On the ". $i. "of the month no products are available";
+    }
+
+    echo'<BR/>';
+
+}
+
+
+
 
 ?>
 </p>
