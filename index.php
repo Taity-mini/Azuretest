@@ -16,7 +16,7 @@
 
     echo'<BR/>';
     echo "My name is " . $myname . " and I am " . $myage;
-
+    echo'<BR/>';
     $name = "Edgar";
 
     if ($name == "Simon") {
@@ -25,7 +25,7 @@
     else {
         print "Who are you?";
     }
-
+echo'<BR/>';
 $numberofHobbits = 2;
 
 switch ($numberofHobbits) {
