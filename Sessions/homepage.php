@@ -6,6 +6,7 @@
  * Time: 13:28
  * Home page
  */
+session_start();
 function displayAccessLevelInformation($accessLevel){
     if($accessLevel == "standarduser"){
         echo "<p>You are currently logged in as a standard user</p>";
@@ -17,8 +18,9 @@ function displayAccessLevelInformation($accessLevel){
 
 }
 //$accessLevel = ;
+//$accesslevel =   $_SESSION['access_level'];
 
-displayAccessLevelInformation($_COOKIE['access_level']);
+displayAccessLevelInformation($_SESSION['access_level']);
 
 
 
