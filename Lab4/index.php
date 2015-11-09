@@ -20,10 +20,11 @@ $db = mysqli_connect("eu-cdbr-azure-north-d.cloudapp.net","“b49912ac2cf930","e63
 
 
 // test if connection was established, and print any errors
-if($db->connect_errno){
-    die(‘Connectfailed['.$db->connect_error.']');
+// Check connection
+if (mysqli_connect_errno())
+{
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
-
 ?>
 
 <!doctype html>
