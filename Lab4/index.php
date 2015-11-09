@@ -13,7 +13,7 @@ error_reporting(E_ALL);
 
 // connect to your Azure server and select database
 
-$db = mysqli_connect("eu-cdbr-azure-north-d.cloudapp.net","“b49912ac2cf930","e632d092","rgu_1504693");
+$db = mysqli_connect("eu-cdbr-azure-north-d.cloudapp.net","b49912ac2cf930","e632d092","rgu_1504693");
 $sectionID = $_GET['sectionID'];
 //$sql_query = "SELECT   FROM Sections superpower LIKE '%laser%'";
 
@@ -60,7 +60,6 @@ if (mysqli_connect_errno())
         <h1 class="title">
         <?php
         echo $row['sectionName'] ;
-
         ?>
 
         </h1>
