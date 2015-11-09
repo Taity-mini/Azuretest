@@ -10,13 +10,18 @@ error_reporting(E_ALL);
  * Time: 13:59
  */
 
-//Session Data
 
-
-
-// connect to your Azure server and select database (remember you connection details are all on the azure portal
+// connect to your Azure server and select database
 
 $db = mysqli_connect("eu-cdbr-azure-north-d.cloudapp.net","“b49912ac2cf930","e632d092","rgu_1504693");
+$sectionID = $_GET['sectionID'];
+//$sql_query = "SELECT   FROM Sections superpower LIKE '%laser%'";
+
+//create sectionText table
+
+$sql_query = "SELECT * from sections where sectionID = '$sectionID'";
+$result = $db->query($sql_query);
+$row = $result->fetch_array();
 
 
 // test if connection was established, and print any errors
@@ -52,7 +57,13 @@ if (mysqli_connect_errno())
 
 <div class="header-container">
     <header class="wrapper clearfix">
-        <h1 class="title">h1.title</h1>
+        <h1 class="title">
+        <?php
+        echo $row['sectionName'] ;
+
+        ?>
+
+        </h1>
         <nav>
             <ul>
                 <li><a href="#">nav ul li a</a></li>
