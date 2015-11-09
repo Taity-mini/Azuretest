@@ -7,9 +7,9 @@
 <body>
 <p></p>
 <ul>
-  <li><><a href="./heloPrinter.php?planet=Earth">Earth</a></li>
-  <li>><a href="./heloPrinter.php?planet=Mars">Mars</a></li>
-  <li><a href="./heloPrinter.php?planet=Uranus">Uranus</a></li>
+  <li><a href="./helloPrinter.php?planet=Earth">Earth</a></li>
+  <li><a href="./helloPrinter.php?planet=Mars">Mars</a></li>
+  <li><a href="./helloPrinter.php?planet=Uranus">Uranus</a></li>
 </ul>
 </body>
 </html>
