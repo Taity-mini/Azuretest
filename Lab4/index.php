@@ -23,6 +23,8 @@ $sql_query = "SELECT * from sections where sectionID = '$sectionID'";
 $result = $db->query($sql_query);
 $row = $result->fetch_array();
 
+$topicID = $row['topicID'];
+$topic = "SELECT 'topicName' from topics WHERE topicID = '$topicID' ";
 
 // test if connection was established, and print any errors
 // Check connection
@@ -59,7 +61,7 @@ if (mysqli_connect_errno())
     <header class="wrapper clearfix">
         <h1 class="title">
         <?php
-        echo $row['sectionName'] ;
+        echo $topic;
         ?>
 
         </h1>
