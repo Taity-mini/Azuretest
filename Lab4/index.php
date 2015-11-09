@@ -26,6 +26,7 @@ $row = $result->fetch_array();
 $topicID = $row['topicID'];
 $topic = "SELECT 'topicName' from topics WHERE topicID = '$topicID' ";
 $topicName = $db->query($topic);
+$row2 = $result->fetch_array();
 // test if connection was established, and print any errors
 // Check connection
 if (mysqli_connect_errno())
@@ -61,7 +62,7 @@ if (mysqli_connect_errno())
     <header class="wrapper clearfix">
         <h1 class="title">
         <?php
-        echo $topicName;
+        echo $row2;
         ?>
 
         </h1>
