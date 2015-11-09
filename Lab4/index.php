@@ -11,8 +11,21 @@ error_reporting(E_ALL);
  */
 
 //Session Data
-mysql_connect("eu-cdbr-azure-north-d.cloudapp.net", "b49912ac2cf930", "e632d092") or die(mysql_error());
-mysql_select_db("rgu_1504693") or die(mysql_error());
+
+
+
+// connect to your Azure server and select database (remember you connection details are all on the azure portal
+$db = new mysqli(
+“eu-cdbr-azure-north-d.cloudapp.net”,
+“b49912ac2cf930”,
+“e632d092”,
+“rgu_1504693”
+);
+// test if connection was established, and print any errors
+if($db->connect_errno){
+    die(‘Connectfailed['.$db->connect_error.']');
+}
+
 
 ?>
 
