@@ -15,17 +15,14 @@ error_reporting(E_ALL);
 
 
 // connect to your Azure server and select database (remember you connection details are all on the azure portal
-$db = new mysqli(
-“eu-cdbr-azure-north-d.cloudapp.net”,
-“b49912ac2cf930”,
-“e632d092”,
-“rgu_1504693”
-);
+
+$db = mysqli_connect("eu-cdbr-azure-north-d.cloudapp.net","“b49912ac2cf930","e632d092","rgu_1504693");
+
+
 // test if connection was established, and print any errors
 if($db->connect_errno){
     die(‘Connectfailed['.$db->connect_error.']');
 }
-
 
 ?>
 
