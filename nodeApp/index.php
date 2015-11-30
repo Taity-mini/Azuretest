@@ -17,14 +17,15 @@
         window.onload = function() {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
-                if (xhttp.readyState == 4 && xhttp.status == 200)
+                if (xhttp.readyState == 4 && xhttp.status == 200
+
                   var tweets = JSON.parse(xhttp.responseText);
                   var tweetstring = "";
 
                  for (var i =0; i< tweets.length ; i++)
                     {
                         tweetstring += "<h3>" + tweets[i].name + "</h3> </br>";
-                        tweetstring += "<p>" + tweets[i].text + "</p>";
+                        tweetstring += "<p>"  + tweets[i].text + "</p>"
                     }
                 document.getElementById("twitter").innerHTML = tweetstring;
                 }
