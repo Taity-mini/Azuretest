@@ -6,6 +6,9 @@
  * Time: 14:11
  */
 
+//Adding url parameters
+$query = $_GET[q];
+
 ?>
 
 <!DocType html>
@@ -30,7 +33,7 @@
                 document.getElementById("twitter").innerHTML = tweetstring;
                 }
             };
-            xhttp.open("GET", "http://rgunodeapp.azurewebsites.net/", true);
+            xhttp.open("GET", "http://rgunodeapp.azurewebsites.net/<?php echo($query);?>", true);
             xhttp.send();
         }
 
