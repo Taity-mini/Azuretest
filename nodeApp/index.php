@@ -22,18 +22,18 @@ $query = $_GET[q];
             xhttp.onreadystatechange = function() {
                 if (xhttp.readyState == 4 && xhttp.status == 200) {
 
-                  var tweets = JSON.parse(xhttp.responseText);
-                  var tweetstring = "";
+                    var tweets = JSON.parse(xhttp.responseText);
+                    var tweetstring = "";
 
-                 for (var i =0; i< tweets.length ; i++)
+                    for (var i =0; i< tweets.length ; i++)
                     {
                         tweetstring += "<h3>" + tweets[i].name + "</h3> </br>";
                         tweetstring += "<p>"  + tweets[i].text + "</p>"
                     }
-                document.getElementById("twitter").innerHTML = tweetstring;
+                    document.getElementById("twitter").innerHTML = tweetstring;
                 }
             };
-            xhttp.open("GET", "http://rgunodeapp.azurewebsites.net/", true);
+            xhttp.open("GET", "http://rgunodeapp.azurewebsites.net/q="+<?php echo $query ?>, true);
             xhttp.send();
         }
 
@@ -47,7 +47,7 @@ $query = $_GET[q];
     <h2>Main content</h2>
 </main>
 <aside id="twitter" >
-
+    <?php echo $query ?>
 </aside>
 </body>
 </html>
