@@ -33,7 +33,7 @@ $query = $_GET[q];
                 document.getElementById("twitter").innerHTML = tweetstring;
                 }
             };
-            xhttp.open("GET", "http://rgunodeapp.azurewebsites.net/?q=lolcats", true);
+            xhttp.open("GET", "http://rgunodeapp.azurewebsites.net?q=lolcats", true);
             xhttp.send();
         }
 
