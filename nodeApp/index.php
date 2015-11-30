@@ -12,12 +12,12 @@
 <html>
 <head lang ="en">
     <meta charset ="UTF-8">
-    <title>Comsuming Twitter Webserver</title>
+    <title>Consuming Twitter Webserver</title>
     <script>
         window.onload = function() {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
-                if (xhttp.readyState == 4 && xhttp.status == 200
+                if (xhttp.readyState == 4 && xhttp.status == 200) {
 
                   var tweets = JSON.parse(xhttp.responseText);
                   var tweetstring = "";
